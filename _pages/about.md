@@ -8,7 +8,7 @@ redirect_from:
 ---
 I am a PhD student at EPFL in the Systems Control and Multiagent Optimization Laboratory, supervised by Professor Maryam Kamgarpour. My research focuses on the theoretical foundations of online safe reinforcement learning and multi-agent systems, with broader interests at the intersection of optimization, game theory, and machine learning.
 
-Prior to my PhD, I obtained an MSc in Mathematics from EPFL (2022), where I completed my master’s thesis at the Numerical Algorithms and High-Performance Computing Laboratory under the supervision of Professor Daniel Kressner. I also hold a BSc in Mathematics (2020) from Lanzhou University.
+Prior to my PhD, I obtained an MSc in Mathematics from EPFL (2022), where I completed my master’s thesis at the Numerical Algorithms and High-Performance Computing Laboratory under the supervision of Professor Daniel Kressner. I also hold a BSc in Mathematics from Lanzhou University (2020), where I completed my bachelor’s thesis at the Algorithms of Machine Learning and Autonomous Driving Research Laboratory under the supervision of Professor Yang Xiang.
 
 ---
 
