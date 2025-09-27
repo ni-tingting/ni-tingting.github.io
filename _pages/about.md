@@ -10,6 +10,16 @@ I am a PhD student at EPFL in the Systems Control and Multiagent Optimization La
 
 Prior to my PhD, I obtained an MSc in Mathematics from EPFL (2022), where I completed my master’s thesis at the Numerical Algorithms and High-Performance Computing Laboratory under the supervision of Professor Daniel Kressner. I also hold a BSc in Mathematics (2020) from Lanzhou University.
 
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
 
 ## Preprints
 
