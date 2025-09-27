@@ -26,7 +26,7 @@ Prior to my PhD, I obtained an MSc in Mathematics from EPFL (2022), where I comp
 
 ## Journal Papers
 
-1. Daniel Kressner\*,  **Tingting Ni**\*, and André Uschmajew\*, [“On the approximation of vector-valued functions by volume sampling,”]([https://www.sciencedirect.com/science/article/pii/S0885064X24000645]) _Journal of Complexity_, 2025.
+1. Daniel Kressner\*,  **Tingting Ni**\*, and André Uschmajew\*, [“On the approximation of vector-valued functions by volume sampling,”](https://www.sciencedirect.com/science/article/pii/S0885064X24000645) _Journal of Complexity_, 2025.
 
 ## Conference Papers
 
