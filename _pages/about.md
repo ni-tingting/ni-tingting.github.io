@@ -21,7 +21,7 @@ Prior to my PhD, I obtained an MSc in Mathematics from EPFL (2022), where I comp
 {% endif %}
 
 ## Preprints
-1. **Tingting Ni**, and Maryam Kamgarpour, ["Constrained meta reinforcement learning with provable test-time safety,"](https://arxiv.org/abs/2601.21845)_arXiv:2601.21845,2026
+1. **Tingting Ni**, and Maryam Kamgarpour, ["Constrained meta reinforcement learning with provable test-time safety,"](https://arxiv.org/abs/2601.21845)arXiv:2601.21845,2026
 
 2. **Tingting Ni**\*, Anna Maddu\*, Maryam Kamgarpour, ["On characterization and existence of a constrained correlated equilibria in Markov games,"](https://arxiv.org/abs/2507.03502) arXiv:2507.03502, 2025.
 
