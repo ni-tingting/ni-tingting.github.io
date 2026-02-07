@@ -54,7 +54,7 @@ Selected Robotics Projects (Supervision & Technical Guidance)
 
 <div align="center">
   <video width="80%" controls autoplay loop muted>
-    <source src="/assets/wet.mp4" type="video/mp4">
+    <source src="/assets/wet.MP4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p><b>Video:</b> Navigation performance on slippery terrain using different policies: 1. Memoryless Feedforward 2. MLP 3. LSTM.</p>
