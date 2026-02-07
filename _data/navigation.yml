@@ -11,7 +11,7 @@ main:
   - title: "Home"
     url: /
   - title: "Robotics Projects"
-    url: /projects/
+    url: /robotics-projects/
   # - title: "Publications"
   #   url: /publications/
 
