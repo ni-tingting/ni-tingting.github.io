@@ -6,6 +6,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<meta name="description" content="Personal website of Tingting Ni. Researcher in [Your Field], developer, and student at [Your University]. View my projects and publications.">
 
 <a id="project-directory"></a>
 ## Selected Robotics Projects (Supervision & Technical Guidance)
