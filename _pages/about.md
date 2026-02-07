@@ -12,6 +12,12 @@ Prior to my PhD, I obtained an MSc in Mathematics from EPFL (2022), where I comp
 
 ---
 
+# Robotics Projects
+
+Selected robotics projects I supervised: [Robotics Projects](/robotics-projects/).
+
+---
+
 # Publications
 
 {% if site.author.googlescholar %}
