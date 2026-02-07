@@ -16,7 +16,9 @@ description              : &description "Tingting Ni - PhD researcher at EPFL. P
 url                      : https://ni-tingting.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ni-tingting.github.io"
-
+author_name              : "Tingting Ni"
+keywords                 : "Tingting Ni, EPFL, PhD researcher on safe Reinforcement Learning "
+google_site_verification : "897e90305fc60493"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
