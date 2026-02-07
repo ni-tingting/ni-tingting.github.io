@@ -10,23 +10,7 @@ Selected Robotics Projects (Supervision & Technical Guidance)
 
 ---
 
-# Navigation of JetBot in slippery terrain via Domain Randomization
-
-- **Student:** Florian Tanguy
-- **Supervision:** Tingting Ni, Kai Ren
-- **Goal:** Using **domian randonmization** on a wheeled mobile-robot testbed to navigate a maze and reach the nearest exit, ensuring safety (obstacle avoidance) using feedback of robot position and relative position to obstacles/goals.
--
--
-- Address the "Sim-to-Real" gap in low-cost robotics, specifically targeting the "stuck robot" phenomenon on low-friction surfaces by integrating high-fidelity physics modeling and memory-based control.
-- **Work:**
-  - Performed **System Identification** on the physical robot to capture multi-modal friction dynamics (e.g., "slippery" vs. "grippy" regimes).
-  - Implemnet **JAX**, enabling massive parallelization (4,096 environments) and differentiable physics to model non-linear actuator deadzones.
-  - Implemented **Data-Driven Domain Randomization** using Gaussian Mixture Models (GMM) to sample realistic physics parameters for domain randomization, with different policy structures, memoryless Feedforward networks, Frame Stacking on MLP, **Recurrent Neural Networks (LSTMs)**
-- **Outcome:**
-  - The **LSTM + Data-Driven** approach successfully bridged the reality gap, enabling **emergent recovery behaviors** (such as "wiggling") to escape low-friction patches where standard policies remained immobilized.
-  - Achieved robust navigation across heterogeneous real-world environments, significantly outperforming Frame Stacking and MLP baselines.
-
-# Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning 
+## Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning 
 
 - **Students:** Rocca Federico, Florian Tanguy
 - **Supervision:** Tingting Ni, Kai Ren
@@ -53,4 +37,16 @@ Selected Robotics Projects (Supervision & Technical Guidance)
     <td align="center"><img src="/assets/real.gif" height="250"></td>
   </tr>
 </table>
+
+## Navigation of JetBot in Slippery Terrain via Domain Randomization 
+
+- **Student:** Florian Tanguy
+- **Supervision:** Tingting Ni, Kai Ren
+- **Goal:** Enable a wheeled mobile robot to navigate **low-friction, slippery terrain** by overcoming the "Sim-to-Real" gap caused by unknown actuator deadzones and wheel slip.
+- **Work:**
+  - Migrated simulation to **JAX** for massive parallelization (4,096 environments) and differentiable physics, incorporating **System Identification** data to model multi-modal friction dynamics (distinct "slippery" vs. "grippy" regimes) and non-linear actuator deadzones.
+  - Implemented **Data-Driven Domain Randomization** using **Gaussian Mixture Models (GMM)** to sample physics parameters, ensuring the training distribution covered real-world failure modes.
+  - Addressed "perceptual aliasing" (where sliding mimics stopping) by implementing **Recurrent Neural Networks (LSTMs)** for policy structure, which outperformed memoryless Feedforward networks and Frame Stacking with MLPs.
+- **Outcome:**
+  - Achieved robust navigation across heterogeneous real-world environments, demonstrating **emergent recovery behaviors** (such as "wiggling") to escape low-friction terrain.
 
