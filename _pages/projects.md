@@ -29,7 +29,7 @@ permalink: /robotics-projects/
 
 <hr>
 #### **Imitation Learning for Autonomous Car Racing (MSc Project, 2024)**
-
+  - Performed system identification and built a simulation model of the JetBot platform.
 - **Student:** Emre Gursoy 
 - **Supervision:** Andreas Schlaginhaufen, Johannes Waibel (PREDICT Lab, EPFL)
 - **Goal:** Learn stable control policies for an autonomous race car from expert demonstrations.  
@@ -51,20 +51,18 @@ permalink: /robotics-projects/
 
 
 <hr>
-#### **Constrained RL & IRL on JetBot Testbed (MSc Theses, 2023)**
+#### **Safe Reinforcement Learning for Robot Maze Escaping (MSc Project, 2024)**
 
-- **Students:** Alexandre Clivaz, Pierre Chassagne  
-- **Supervision:** Andreas Schlaginhaufen, Tony Wood  
-- **Goal:** Develop and deploy constrained RL and IRL methods on a wheeled mobile-robot testbed to navigate a maze and reach the nearest exit safely.  
+- **Student:** Rocca Federico
+- **Supervision:** Tingting Ni, Kai Ren
+- **Goal:** Develop a **Lagrangian-PPO framework** on a wheeled mobile-robot testbed to navigate a maze and reach the nearest exit, ensuring safety (obstacle avoidance) using feedback of robot position and relative position to obstacles/goals.
 - **Work:**
-  - Performed system identification and built a simulation model of the JetBot platform.
-  - Collected real-world expert demonstrations and trained a **behavioral cloning (BC)** baseline.
-  - Implemented **constrained RL** and **IRL** in simulation, ensuring safety during navigation.
-  - Trained a perception module for real-world obstacle detection.
-  - Executed **sim-to-real transfer** and improved performance and safety via **online RL fine-tuning** on the robot.
+  - Formulated the navigation challenge as a **Constrained Markov Decision Process (CMDP)** and implemented a **Lagrangian-PPO** approach to enforce safety constraints.
+  - Leveraged **NVIDIA IsaacLab** to train policies across **4096 parallel environments** on GPU to accelerate learning.
+  - Developed a **Sim-to-Real pipeline** exporting policies to a **ROS2** node for inference on a physical JetBot using OptiTrack for state estimation.
 - **Outcome:**
-  - Learned **safe navigation policies** in simulation using constrained RL and IRL.
-  - Successfully deployed policies on the real robot, improving **safety** and **performance** through online RL fine-tuning.
+  - Learned **safe navigation policies** in simulation using a hybrid cost/probability strategy, achieving **~99% collision-free trajectories**.
+  - Deployed policies to the real robot to evaluate **Sim-to-Real transfer**, identifying critical gaps in action space mapping and control latency that affected real-world safety.
 
 <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; margin-bottom:24px;">
   <video controls style="height:250px; width:auto; max-width:100%; border-radius:10px;">
