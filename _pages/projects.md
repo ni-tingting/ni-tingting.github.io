@@ -61,7 +61,7 @@ redirect_from:
 <br>
 
 <div align="center">
-  <video width="60%" controls autoplay loop muted>
+  <video width="70%" controls autoplay loop muted>
     <source src="/assets/wet.MP4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
