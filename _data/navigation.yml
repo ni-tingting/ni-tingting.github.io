@@ -10,6 +10,8 @@
 main:
   - title: "Home"
     url: /
+  - title: "Robotics Projects"
+    url: /projects/
   # - title: "Publications"
   #   url: /publications/
 
@@ -21,9 +23,6 @@ main:
     
   # - title: "Portfolio"
   #   url: /portfolio/
-        
-  - title: "Robotics Projects"
-    url: /projects/
     
   # - title: "CV"
   #   url: /cv/
