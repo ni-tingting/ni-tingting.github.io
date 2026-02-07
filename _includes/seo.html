@@ -98,6 +98,44 @@
   </script>
 {% endif %}
 
+{% if site.name %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.name }}",
+      "url": "{{ seo_url }}",
+      "jobTitle": "PhD Researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "EPFL",
+        "url": "https://www.epfl.ch"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "EPFL"
+        },
+        {
+          "@type": "Organization",
+          "name": "Lanzhou University"
+        }
+      ],
+      "description": "{{ site.description }}",
+      "sameAs": [
+        {% if site.author.github %}"https://github.com/{{ site.author.github }}",{% endif %}
+        {% if site.author.linkedin %}"{{ site.author.linkedin }}",{% endif %}
+        {% if site.author.googlescholar %}"{{ site.author.googlescholar }}",{% endif %}
+        {% if site.author.orcid %}"{{ site.author.orcid }}"{% endif %}
+      ]
+    }
+  </script>
+{% endif %}
+
+<!-- Add keywords meta tag -->
+<meta name="keywords" content="Tingting Ni, EPFL, PhD researcher, safe reinforcement learning, multi-agent systems, optimization, game theory, machine learning, Maryam Kamgarpour">
+<meta name="author" content="Tingting Ni">
+
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ni-tingting.github.io/sitemap.xml
