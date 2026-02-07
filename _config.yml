@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Tingting Ni"
 title_separator          : "-"
 name                     : &name "Tingting Ni"
-description              : &description "personal description"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Tingting Ni - PhD researcher at EPFL specializing in safe reinforcement learning, multi-agent systems, optimization, and game theory. Academic website with research publications and projects."
 url                      : https://ni-tingting.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ni-tingting.github.io"
@@ -139,14 +139,18 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "profile_photo.jpg"  # Social media default site image
+og_description           : "Tingting Ni - PhD researcher at EPFL specializing in safe reinforcement learning, multi-agent systems, optimization, and game theory."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Tingting Ni"
+  links:
+    - "https://github.com/ni-tingting"
+    - "https://www.linkedin.com/in/tingting-ni1998/"
+    - "https://scholar.google.com/citations?hl=en&user=zxWQB-sAAAAJ"
+    - "https://orcid.org/0009-0001-5625-9826"
 
 
 # Analytics
