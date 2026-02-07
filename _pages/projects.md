@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+<a id="project-directory"></a>
 ## Selected Robotics Projects (Supervision & Technical Guidance)
 1. [**Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning**](#project-1)
 2. [**Navigation of JetBot in Slippery Terrain via Domain Randomization**](#project-2)
