@@ -7,11 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Selected Robotics Projects (Supervision & Technical Guidance)
-
----
-
-## Project Directory
+## Selected Robotics Projects (Supervision & Technical Guidance)
 1. [**Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning**](#project-1)
 2. [**Navigation of JetBot in Slippery Terrain via Domain Randomization**](#project-2)
 3. [**Safe Reinforcement Learning for Multi-Robot Systems in Hazardous Environments**](#project-3)
@@ -90,10 +86,11 @@ Selected Robotics Projects (Supervision & Technical Guidance)
 
 <div align="center">
   <video width="60%" controls autoplay loop muted>
-    <source src="/assets/wet.MP4" type="video/mp4">
+    <source src="/assets/multi_rob.mov" type="video/quicktime">
+    <source src="/assets/multi_rob.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p><b>Video:</b> Navigation performance on slippery terrain using different policies: 1. Memoryless Feedforward 2. MLP 3. LSTM.</p>
+  <p><b>Video:</b> Multi-robot coordination in hazardous fire environments.</p>
 </div>
 
 <div align="right"><a href="#project-directory">(Back to Top)</a></div>
