@@ -123,9 +123,9 @@
       ],
       "description": "{{ site.description }}",
       "sameAs": [
-        {% if site.author.github %}"https://github.com/{{ site.author.github }}",{% endif %}
-        {% if site.author.linkedin %}"{{ site.author.linkedin }}",{% endif %}
-        {% if site.author.googlescholar %}"{{ site.author.googlescholar }}",{% endif %}
+        {% if site.author.github %}"https://github.com/{{ site.author.github }}"{% if site.author.linkedin or site.author.googlescholar or site.author.orcid %},{% endif %}{% endif %}
+        {% if site.author.linkedin %}"{{ site.author.linkedin }}"{% if site.author.googlescholar or site.author.orcid %},{% endif %}{% endif %}
+        {% if site.author.googlescholar %}"{{ site.author.googlescholar }}"{% if site.author.orcid %},{% endif %}{% endif %}
         {% if site.author.orcid %}"{{ site.author.orcid }}"{% endif %}
       ]
     }
