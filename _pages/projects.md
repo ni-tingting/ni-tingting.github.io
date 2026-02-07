@@ -29,7 +29,6 @@ permalink: /robotics-projects/
 
 <hr>
 #### **Imitation Learning for Autonomous Car Racing (MSc Project, 2024)**
-  - Performed system identification and built a simulation model of the JetBot platform.
 - **Student:** Emre Gursoy 
 - **Supervision:** Andreas Schlaginhaufen, Johannes Waibel (PREDICT Lab, EPFL)
 - **Goal:** Learn stable control policies for an autonomous race car from expert demonstrations.  
@@ -51,18 +50,22 @@ permalink: /robotics-projects/
 
 
 <hr>
-#### **Safe Reinforcement Learning for Robot Maze Escaping (MSc Project, 2024)**
 
-- **Student:** Rocca Federico
+#### **Safe Reinforcement Learning for Robot Maze Escaping (MSc Projects, 2024/2025)**
+
+- **Students:** Rocca Federico, Florian Tanguy
 - **Supervision:** Tingting Ni, Kai Ren
 - **Goal:** Develop a **Lagrangian-PPO framework** on a wheeled mobile-robot testbed to navigate a maze and reach the nearest exit, ensuring safety (obstacle avoidance) using feedback of robot position and relative position to obstacles/goals.
 - **Work:**
   - Formulated the navigation challenge as a **Constrained Markov Decision Process (CMDP)** and implemented a **Lagrangian-PPO** approach to enforce safety constraints.
-  - Leveraged **NVIDIA IsaacLab** to train policies across **4096 parallel environments** on GPU to accelerate learning.
+  - **Approach 1 (IsaacLab):** Leveraged **NVIDIA IsaacLab** to train policies across multiple **parallel environments** on GPU to accelerate learning.
+  - **Approach 2 (Custom JAX):** Performed **system identification** to build a high-fidelity simulation model of the JetBot platform, utilizing **JAX** for accelerated learning.
   - Developed a **Sim-to-Real pipeline** exporting policies to a **ROS2** node for inference on a physical JetBot using OptiTrack for state estimation.
 - **Outcome:**
-  - Learned **safe navigation policies** in simulation using a hybrid cost/probability strategy, achieving **~99% collision-free trajectories**.
-  - Deployed policies to the real robot to evaluate **Sim-to-Real transfer**, identifying critical gaps in action space mapping and control latency that affected real-world safety.
+  - **Simulation Performance:** Both approaches achieved **~100% collision-free trajectories** within their respective simulation environments.
+  - **Sim-to-Real Gap (IsaacLab):** Policies trained in NVIDIA IsaacLab struggled to transfer, identifying critical gaps in the physics/actuation modeling that affected real-world safety.
+  - **Real-World Success (Custom JAX):** Policies trained on the **self-built simulation model** bridged the reality gap, maintaining **~100% collision-free trajectories** when deployed on the physical robot.
+
 
 <div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; margin-bottom:24px;">
   <video controls style="height:250px; width:auto; max-width:100%; border-radius:10px;">
