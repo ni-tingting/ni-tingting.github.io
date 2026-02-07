@@ -84,7 +84,7 @@ redirect_from:
     <source src="/assets/multi_rob.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <p><b>Video:</b> Multi-robot coordination in hazardous fire environments.</p>
+  <p><b>Video:</b> Multi-robot coordination in hazardous fire environments: Red = Fire, Blue = Survivors, Green = Exits.</p>
 </div>
 
 <div align="right"><a href="#project-directory">(Back to Top)</a></div>
