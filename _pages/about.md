@@ -1,3 +1,7 @@
+<meta name="description" content="Personal website of Tingting Ni. Researcher in safe safe reinforcement learning, developer, and student at EPFL. View my projects and publications.">
+
+
+
 ---
 permalink: /
 title: "Biography"
