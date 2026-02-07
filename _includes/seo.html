@@ -78,6 +78,21 @@
     <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
   {% endif %}
 {% endif %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ seo_description }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+{% if page.header.image %}
+  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
+{% elsif site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
+{% endif %}
+
+<!-- Schema.org markup for Google -->
+<meta itemprop="name" content="{{ page.title | default: site.title }}">
+<meta itemprop="description" content="{{ seo_description }}">
+
 
 {% if paginator.previous_page %}
   <link rel="prev" href="{{ paginator.previous_page_path | prepend: seo_url }}">
