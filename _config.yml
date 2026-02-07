@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Tingting Ni"
 title_separator          : "-"
 name                     : &name "Tingting Ni"
-description              : &description "personal description"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Tingting Ni - PhD researcher at EPFL. Personal academic website showcasing research, publications, and professional work in safe Reinforcement Learning."
 url                      : https://ni-tingting.github.io 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ni-tingting.github.io"
