@@ -65,10 +65,17 @@ permalink: /robotics-projects/
   - **Simulation Performance:** Both approaches achieved **~100% collision-free trajectories** within their respective simulation environments.
   - **Sim-to-Real Gap (IsaacLab):** Policies trained in NVIDIA IsaacLab struggled to transfer, identifying critical gaps in the physics/actuation modeling that affected real-world safety.
   - **Real-World Success (Custom JAX):** Policies trained on the **self-built simulation model** bridged the reality gap, maintaining **~100% collision-free trajectories** when deployed on the physical robot.
+ 
+<br>
 
+<table>
+  <tr>
+    <th align="center">Custom Simulation </th>
+    <th align="center">Real World (JetBot)</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="/assets/sim.gif" height="250"></td>
+    <td align="center"><img src="/assets/real.gif" height="250"></td>
+  </tr>
+</table>
 
-<div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap; margin-bottom:24px;">
-  <video controls style="height:250px; width:auto; max-width:100%; border-radius:10px;">
-    <source src="/assets/jetbot/demo.mp4" type="video/mp4">
-  </video>
-</div>
