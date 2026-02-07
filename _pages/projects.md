@@ -29,8 +29,6 @@ redirect_from:
   - **Sim-to-Real Gap (IsaacLab):** Policies trained in NVIDIA IsaacLab struggled to transfer, identifying critical gaps in the physics/actuation modeling that affected real-world safety.
   - **Real-World Success (Custom JAX):** Policies trained on the **self-built simulation model** bridged the reality gap, maintaining **~100% collision-free trajectories** when deployed on the physical robot.
 
-<br>
-
 <table>
   <tr>
     <th align="center">Simulation</th>
@@ -58,8 +56,6 @@ redirect_from:
 - **Outcome:**
   - Achieved robust navigation across heterogeneous real-world environments, demonstrating **emergent recovery behaviors** (such as "wiggling") to escape low-friction terrain.
 
-<br>
-
 <div align="center">
   <video width="70%" controls autoplay loop muted>
     <source src="/assets/wet.MP4" type="video/mp4">
@@ -82,10 +78,8 @@ redirect_from:
 - **Outcome:**
   - Achieved robust **collaborative behaviors** where robots successfully coordinate to locate and save survivors.
 
-<br>
-
 <div align="center">
-  <video width="60%" controls autoplay loop muted>
+  <video width="80%" controls autoplay loop muted>
     <source src="/assets/multi_rob.mov" type="video/quicktime">
     <source src="/assets/multi_rob.mov" type="video/mp4">
     Your browser does not support the video tag.
