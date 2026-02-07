@@ -6,11 +6,19 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
 Selected Robotics Projects (Supervision & Technical Guidance)
 
 ---
 
-## Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning 
+## Project Directory
+1. [**Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning**](#project-1)
+2. [**Navigation of JetBot in Slippery Terrain via Domain Randomization**](#project-2)
+3. [**Safe Reinforcement Learning for Multi-Robot Systems in Hazardous Environments**](#project-3)
+
+---
+
+### <a id="project-1"></a>Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning
 
 - **Students:** Rocca Federico, Florian Tanguy
 - **Supervision:** Tingting Ni, Kai Ren
@@ -24,12 +32,12 @@ Selected Robotics Projects (Supervision & Technical Guidance)
   - **Simulation Performance:** Both approaches achieved **~100% collision-free trajectories** within their respective simulation environments.
   - **Sim-to-Real Gap (IsaacLab):** Policies trained in NVIDIA IsaacLab struggled to transfer, identifying critical gaps in the physics/actuation modeling that affected real-world safety.
   - **Real-World Success (Custom JAX):** Policies trained on the **self-built simulation model** bridged the reality gap, maintaining **~100% collision-free trajectories** when deployed on the physical robot.
- 
+
 <br>
 
 <table>
   <tr>
-    <th align="center">Custom Simulation </th>
+    <th align="center">Simulation</th>
     <th align="center">Real World (JetBot)</th>
   </tr>
   <tr>
@@ -38,7 +46,11 @@ Selected Robotics Projects (Supervision & Technical Guidance)
   </tr>
 </table>
 
-## Navigation of JetBot in Slippery Terrain via Domain Randomization 
+<div align="right"><a href="#project-directory">(Back to Top)</a></div>
+
+---
+
+### <a id="project-2"></a>Navigation of JetBot in Slippery Terrain via Domain Randomization
 
 - **Student:** Florian Tanguy
 - **Supervision:** Tingting Ni, Kai Ren
@@ -49,14 +61,39 @@ Selected Robotics Projects (Supervision & Technical Guidance)
   - Addressed "perceptual aliasing" (where sliding mimics stopping) by implementing **Recurrent Neural Networks (LSTMs)** for policy structure, which outperformed memoryless Feedforward networks and Frame Stacking with MLPs.
 - **Outcome:**
   - Achieved robust navigation across heterogeneous real-world environments, demonstrating **emergent recovery behaviors** (such as "wiggling") to escape low-friction terrain.
- 
+
 <br>
 
 <div align="center">
-  <video width="80%" controls autoplay loop muted>
+  <video width="60%" controls autoplay loop muted>
     <source src="/assets/wet.MP4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <p><b>Video:</b> Navigation performance on slippery terrain using different policies: 1. Memoryless Feedforward 2. MLP 3. LSTM.</p>
 </div>
 
+<div align="right"><a href="#project-directory">(Back to Top)</a></div>
+---
+
+### <a id="project-3"></a> Safe Reinforcement Learning for Multi-Robot Systems in Hazardous Environments
+
+- **Student:** Xiao Zhou
+- **Supervision:** Tingting Ni, Kai Ren
+- **Goal:** Utilize **Constrained Multi-Agent Reinforcement Learning (CMARL)** to enable robots to collaborate on survivor rescue missions while ensuring their own survival in hazardous environments featuring spreading fires and obstacle avoidance.
+- **Work:**
+  - Formulated the rescue mission as a **Constrained Decentralized Partially Observable Markov Decision Process (Dec-POMDP)**.
+  - Implemented **constrained MAPPO**, **constrained IPPO**, and **Decentralized CRPO** to learn cooperative policies that strictly enforce safety, ensuring robots avoid fires and collisions while performing rescues.
+- **Outcome:**
+  - Achieved robust **collaborative behaviors** where robots successfully coordinate to locate and save survivors.
+
+<br>
+
+<div align="center">
+  <video width="60%" controls autoplay loop muted>
+    <source src="/assets/wet.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p><b>Video:</b> Navigation performance on slippery terrain using different policies: 1. Memoryless Feedforward 2. MLP 3. LSTM.</p>
+</div>
+
+<div align="right"><a href="#project-directory">(Back to Top)</a></div>
