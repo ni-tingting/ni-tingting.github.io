@@ -1,30 +1,34 @@
+
 ---
-layout: page
+layout: archive
 title: "Robotics Projects"
 permalink: /robotics-projects/
+redirect_from:
+  - /home
 ---
-# Selected Robotics Projects (Supervision & Technical Guidance)
 
-<hr>
+{% include base_path %}
+
+Selected Robotics Projects (Supervision & Technical Guidance)
+======
+
 
 #### **Sim-to-Real Transfer for JetBot via Domain Randomization and Recurrent Policies (Semester Project, 2026)**
 
-- [cite_start]**Student:** Florian Tanguy [cite: 599]
-- [cite_start]**Supervision:** Tingting Ni, Kai Ren, Prof. Maryam Kamgarpour [cite: 602]
-- [cite_start]**Goal:** Address the "Sim-to-Real" gap in low-cost robotics, specifically targeting the "stuck robot" phenomenon on low-friction surfaces by integrating high-fidelity physics modeling and memory-based control[cite: 610, 611].
+- **Student:** Florian Tanguy
+- **Supervision:** Tingting Ni, Kai Ren
+- **Goal:** Address the "Sim-to-Real" gap in low-cost robotics, specifically targeting the "stuck robot" phenomenon on low-friction surfaces by integrating high-fidelity physics modeling and memory-based control.
 - **Work:**
-  - [cite_start]Migrated simulation infrastructure to **JAX**, enabling massive parallelization (4,096 environments) and differentiable physics to model non-linear actuator deadzones[cite: 612, 613].
-  - [cite_start]Performed **System Identification (SysID)** on the physical robot to capture multi-modal friction dynamics (e.g., "slippery" vs. "grippy" regimes)[cite: 615].
-  - [cite_start]Implemented **Data-Driven Domain Randomization** using Gaussian Mixture Models (GMM) to sample realistic physics parameters rather than uniform distributions[cite: 616].
-  - [cite_start]Addressed **perceptual aliasing** (where wheel slip creates false stationary observations) by transitioning from memoryless Feedforward networks to **Recurrent Neural Networks (LSTMs)**[cite: 617, 691].
+  - Performed **System Identification** on the physical robot to capture multi-modal friction dynamics (e.g., "slippery" vs. "grippy" regimes).
+  - Implemnet **JAX**, enabling massive parallelization (4,096 environments) and differentiable physics to model non-linear actuator deadzones.
+  - Implemented **Data-Driven Domain Randomization** using Gaussian Mixture Models (GMM) to sample realistic physics parameters for domain randomization.
+  - Addressed **perceptual aliasing** (where wheel slip creates false stationary observations) by transitioning from memoryless Feedforward networks to **Recurrent Neural Networks (LSTMs)**.
 - **Outcome:**
-  - [cite_start]Demonstrated that baseline policies trained with Uniform Domain Randomization fail on slippery terrain due to distribution mismatch[cite: 618, 1130].
-  - [cite_start]The **LSTM + Data-Driven** approach successfully bridged the reality gap, enabling **emergent recovery behaviors** (such as "wiggling") to escape low-friction patches where standard policies remained immobilized[cite: 619, 1174].
-  - [cite_start]Achieved robust navigation across heterogeneous real-world environments, significantly outperforming Frame Stacking and MLP baselines[cite: 1168].
+  - The **LSTM + Data-Driven** approach successfully bridged the reality gap, enabling **emergent recovery behaviors** (such as "wiggling") to escape low-friction patches where standard policies remained immobilized[cite: 619, 1174].
+  - Achieved robust navigation across heterogeneous real-world environments, significantly outperforming Frame Stacking and MLP baselines.
 
-<hr>
 
-#### **Safe Reinforcement Learning for Robot Maze Escaping (MSc Projects, 2024/2025)**
+#### **Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning (MSc Projects, 2024/2025)**
 
 - **Students:** Rocca Federico, Florian Tanguy
 - **Supervision:** Tingting Ni, Kai Ren
