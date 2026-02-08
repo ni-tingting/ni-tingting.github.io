@@ -11,7 +11,7 @@ redirect_from:
 <a id="project-directory"></a>
 ## Selected Robotics Projects (Supervision & Technical Guidance)
 1. [**Sim-to-Real Transfer for JetBot on Maze Escaping using Safe Reinforcement Learning**](#project-1)
-2. [**Navigation of JetBot in Slippery Terrain via Domain Randomization**](#project-2)
+2. [**Safe Navigation of JetBot in Slippery Terrain via Domain Randomization**](#project-2)
 3. [**Safe Reinforcement Learning for Multi-Robot Systems in Hazardous Environments**](#project-3)
 
 ---
@@ -46,17 +46,17 @@ redirect_from:
 
 ---
 
-### <a id="project-2"></a>Navigation of JetBot in Slippery Terrain via Domain Randomization
+### <a id="project-2"></a>Safe Navigation of JetBot in Slippery Terrain via Domain Randomization
 
 - **Student:** Florian Tanguy
 - **Supervision:** Tingting Ni, Kai Ren
-- **Goal:** Enable a wheeled mobile robot to navigate **low-friction, slippery terrain** by overcoming the "Sim-to-Real" gap caused by unknown actuator deadzones and wheel slip.
+- **Goal:** Develop a **data-driven domain randomization** framework to enable a wheeled mobile robot to navigate **low-friction, slippery terrain**, bridging the "Sim-to-Real" gap caused by unmodeled actuator deadzones and complex friction dynamics.
 - **Work:**
   - Migrated simulation to **JAX** for massive parallelization (4,096 environments) and differentiable physics, incorporating **System Identification** data to model multi-modal friction dynamics (distinct "slippery" vs. "grippy" regimes) and non-linear actuator deadzones.
   - Implemented **Data-Driven Domain Randomization** using **Gaussian Mixture Models** to sample physics parameters, ensuring the training distribution covered real-world failure modes.
-  - Addressed "perceptual aliasing" (where sliding mimics stopping) by implementing **Recurrent Neural Networks (LSTMs)** for policy structure, which outperformed memoryless Feedforward networks and Frame Stacking with MLPs.
+  - Addressed "perceptual aliasing" (where sliding mimics stopping) by implementing **Recurrent Neural Networks (LSTMs)** for policy structure, which outperformed memoryless Feedforward networks and frame stacking with MLPs.
 - **Outcome:**
-  - Achieved robust navigation across heterogeneous real-world environments, demonstrating **emergent recovery behaviors** (such as "wiggling") to escape low-friction terrain.
+  - Achieved robust navigation across heterogeneous real-world environments, demonstrating **emergent recovery behaviors** (such as "wiggling") to escape slippery terrain.
 
 <div align="center">
   <video width="70%" controls autoplay loop muted>
@@ -73,10 +73,10 @@ redirect_from:
 
 - **Student:** Xiao Zhou
 - **Supervision:** Tingting Ni, Kai Ren
-- **Goal:** Utilize **Constrained Multi-Agent Reinforcement Learning (CMARL)** to enable robots to collaborate on survivor rescue missions while ensuring their own survival in hazardous environments featuring spreading fires and obstacle avoidance.
+- **Goal:** Utilize **Constrained Multi-Agent Reinforcement Learning** to enable robots to collaborate on survivor rescue missions while ensuring their own safety in hazardous environments featuring spreading fires and obstacle avoidance.
 - **Work:**
   - Formulated the rescue mission as a **Constrained Decentralized Partially Observable Markov Decision Process**.
-  - Implemented **constrained MAPPO**, **constrained IPPO**, and **Decentralized CRPO** to learn cooperative policies that strictly enforce safety, ensuring robots avoid fires and collisions while performing rescues.
+  - Implemented **constrained MAPPO**, **constrained IPPO**, and **Decentralized CRPO** to learn cooperative policies that strictly enforce safety, ensuring robots avoid fires and collisions while rescueing survivors.
 - **Outcome:**
   - Achieved robust **collaborative behaviors** where robots successfully coordinate to locate and save survivors.
 
