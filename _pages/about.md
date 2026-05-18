@@ -26,11 +26,9 @@ Selected robotics projects I supervised: [Robotics Projects](/robotics-projects/
     You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
   </div>
 {% endif %}
-
 ## Preprints
-1. **Tingting Ni**, and Maryam Kamgarpour, ["Constrained meta reinforcement learning with provable test-time safety,"](https://arxiv.org/abs/2601.21845) arXiv:2601.21845,2026
 
-2. **Tingting Ni**\*, Anna Maddu\*, Maryam Kamgarpour, ["On characterization and existence of a constrained correlated equilibria in Markov games,"](https://arxiv.org/abs/2507.03502) arXiv:2507.03502, 2025.
+1. **Tingting Ni**\*, Anna Maddu\*, Maryam Kamgarpour, ["On characterization and existence of a constrained correlated equilibria in Markov games,"](https://arxiv.org/abs/2507.03502) arXiv:2507.03502, 2025.
 
 ## Journal Papers
 
@@ -38,10 +36,11 @@ Selected robotics projects I supervised: [Robotics Projects](/robotics-projects/
 
 ## Conference Papers
 
-1. **Tingting Ni**, and Maryam Kamgarpour, [“A learning-based approach to stochastic optimal control under reach-avoid constraint,"](https://dl.acm.org/doi/10.1145/3716863.3718055) _In Proceedings of the 28th ACM International Conference on Hybrid Systems: Computation and Control (HSCC)_, 2025.
-2. **Tingting Ni**, and Maryam Kamgarpour, [“A safe exploration approach to constrained Markov decision processes,"](https://proceedings.mlr.press/v258/ni25a.html) _In International Conference on Artificial Intelligence and Statistics (AISTATS), PMLR_, 2025. (Presented also at ICML 2024 Workshop: Foundations of Reinforcement Learning and Control)
-3. Fateme Baneshi, Marıa Cerezo Magana, Manuel Soler, **Tingting Ni**, and Maryam Kamgarpour, [“Aircraft trajectory planning for climate hotspot avoidance considering air traffic complexity: A constrained multi-agent reinforcement learning approach,"](https://www.sesarju.eu/sites/default/files/documents/sid/2024/papers/SIDs_2024_paper_084%20final.pdf) _In SESAR Innovation Days_, 2024.
-4. Titouan Renard\*, Andreas Schlaginhaufen\*, **Tingting Ni**\*, Maryam Kamgarpour, [“Convergence of a model-free entropy-regularized inverse reinforcement learning algorithm,"](https://ieeexplore.ieee.org/abstract/document/10886001) _In 63rd IEEE Conference on Decision and Control (CDC)_, 2024.
+1. **Tingting Ni**, and Maryam Kamgarpour, ["Constrained meta reinforcement learning with provable test-time safety,"](https://arxiv.org/abs/2601.21845) _Forty-third International Conference on Machine Learning (ICML)_, 2026.
+2. **Tingting Ni**, and Maryam Kamgarpour, [“A learning-based approach to stochastic optimal control under reach-avoid constraint,"](https://dl.acm.org/doi/10.1145/3716863.3718055) _In Proceedings of the 28th ACM International Conference on Hybrid Systems: Computation and Control (HSCC)_, 2025.
+3. **Tingting Ni**, and Maryam Kamgarpour, [“A safe exploration approach to constrained Markov decision processes,"](https://proceedings.mlr.press/v258/ni25a.html) _In International Conference on Artificial Intelligence and Statistics (AISTATS), PMLR_, 2025. (Presented also at ICML 2024 Workshop: Foundations of Reinforcement Learning and Control)
+4. Fateme Baneshi, Marıa Cerezo Magana, Manuel Soler, **Tingting Ni**, and Maryam Kamgarpour, [“Aircraft trajectory planning for climate hotspot avoidance considering air traffic complexity: A constrained multi-agent reinforcement learning approach,"](https://www.sesarju.eu/sites/default/files/documents/sid/2024/papers/SIDs_2024_paper_084%20final.pdf) _In SESAR Innovation Days_, 2024.
+5. Titouan Renard\*, Andreas Schlaginhaufen\*, **Tingting Ni**\*, Maryam Kamgarpour, [“Convergence of a model-free entropy-regularized inverse reinforcement learning algorithm,"](https://ieeexplore.ieee.org/abstract/document/10886001) _In 63rd IEEE Conference on Decision and Control (CDC)_, 2024.
 
 
 ---
