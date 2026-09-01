@@ -28,6 +28,8 @@ Selected robotics projects I supervised: [Robotics Projects](/robotics-projects/
 {% endif %}
 ## Preprints
 
+1. **Tingting Ni**, Maryam Kamgarpour, ["Provably Ssafe sim-to-real transfer."]
+
 1. **Tingting Ni**\*, Anna Maddu\*, Maryam Kamgarpour, ["On the characterization of a constrained correlated equilibria in Markov games,"](https://arxiv.org/abs/2507.03502) arXiv:2507.03502, 2025.
 
 ## Journal Papers
