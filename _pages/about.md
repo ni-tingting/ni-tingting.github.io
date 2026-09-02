@@ -27,7 +27,6 @@ Selected robotics projects I supervised: [Robotics Projects](/robotics-projects/
   </div>
 {% endif %}
 ## Preprints
-https://arxiv.org/abs/2609.01418
 
 1. **Tingting Ni**, Maryam Kamgarpour, ["Provably safe sim-to-real transfer,"](https://arxiv.org/abs/2609.01418) arXiv:2609.01418, 2026.
 
